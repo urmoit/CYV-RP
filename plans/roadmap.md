@@ -10,59 +10,49 @@ This document outlines the high-level roadmap for developing the custom FiveM se
 - **Event-Driven**: Custom events for inter-module communication
 
 ## Core Components
-1. **Player Management**
-    - [ ] Character creation and customization
-    - [ ] Login/registration system
-    - [ ] Player data persistence
+1. **Economy System**
+    - Job system with salaries
+    - Money transactions
+    - Banking system
 
-2. **Inventory System**
-    - [ ] Item management with metadata
-    - [ ] Weight and capacity limits
-    - [ ] Item usage and interactions
+2. **Vehicle Management**
+    - Vehicle ownership and spawning
+    - Garage system
+    - Vehicle customization
 
-3. **Economy System**
-    - [ ] Job system with salaries
-    - [ ] Money transactions
-    - [ ] Banking system
+3. **Housing System**
+    - Property ownership
+    - Furniture and customization
+    - Rental system
+    - Buyable mansions with premium features
 
-4. **Vehicle Management**
-    - [ ] Vehicle ownership and spawning
-    - [ ] Garage system
-    - [ ] Vehicle customization
+4. **Business System**
+    - Drug dealing operations
+    - Business ownership and management
+    - Profit sharing and expansion
+    - Illegal activities integration
 
-5. **Housing System**
-     - [ ] Property ownership
-     - [ ] Furniture and customization
-     - [ ] Rental system
-     - [ ] Buyable mansions with premium features
+5. **Factions/Gangs**
+    - Group management
+    - Territory control
+    - Member roles and permissions
 
-6. **Business System**
-     - [ ] Drug dealing operations
-     - [ ] Business ownership and management
-     - [ ] Profit sharing and expansion
-     - [ ] Illegal activities integration
+6. **Police System**
+    - Law enforcement mechanics
+    - Wanted system
+    - Jail and fines
 
-7. **Factions/Gangs**
-    - [ ] Group management
-    - [ ] Territory control
-    - [ ] Member roles and permissions
-
-8. **Police System**
-    - [ ] Law enforcement mechanics
-    - [ ] Wanted system
-    - [ ] Jail and fines
-
-9. **Custom Events**
-    - [ ] Server-wide events
-    - [ ] Seasonal activities
-    - [ ] Community challenges
+7. **Custom Events**
+    - Server-wide events
+    - Seasonal activities
+    - Community challenges
 
 ## Additional Features
-- [ ] Shops and marketplaces
-- [ ] Crafting system
-- [ ] Skills and leveling
-- [ ] Admin/moderation tools
-- [ ] Logging and analytics
+- Shops and marketplaces
+- Crafting system
+- Skills and leveling
+- Admin/moderation tools
+- Logging and analytics
 
 ## Development Phases
 1. **Phase 1**: Core Infrastructure - Establish the foundational structure and database setup
@@ -77,9 +67,7 @@ This document outlines the high-level roadmap for developing the custom FiveM se
 
 ```mermaid
 graph TD
-    A[Player Management] --> B[Database]
-    C[Inventory System] --> B
-    D[Economy System] --> B
+    D[Economy System] --> B[Database]
     E[Vehicle Management] --> B
     F[Housing System] --> B
     F2[Business System] --> B
@@ -90,9 +78,7 @@ graph TD
     K[Skills & Leveling] --> B
     L[Admin Tools] --> B
 
-    A --> M[Client UI]
-    C --> M
-    D --> M
+    D --> M[Client UI]
     E --> M
     F --> M
     F2 --> M
@@ -103,9 +89,7 @@ graph TD
     K --> M
     L --> M
 
-    N[Server Core] --> A
-    N --> C
-    N --> D
+    N[Server Core] --> D
     N --> E
     N --> F
     N --> F2

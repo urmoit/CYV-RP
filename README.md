@@ -70,7 +70,7 @@ The development roadmap outlines the high-level plan for implementing the framew
 - Developing comprehensive UI components
 - Testing, optimization, and deployment
 
-For detailed roadmap with checkboxes, see [plans/roadmap.md](plans/roadmap.md).
+For detailed roadmap, see [plans/roadmap.md](plans/roadmap.md).
 
 ## TODO List
 
