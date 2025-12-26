@@ -9,7 +9,8 @@ A comprehensive custom FiveM server framework designed for role-playing servers,
 - **Inventory System**: Item management with weight limits and metadata
 - **Economy System**: Jobs, money transactions, and banking
 - **Vehicle Management**: Ownership, garages, and customization
-- **Housing System**: Property ownership, furniture, and rentals
+- **Housing System**: Property ownership, furniture, rentals, and buyable mansions
+- **Business System**: Drug dealing operations, ownership, and management
 - **Factions/Gangs**: Group management and territory control
 - **Police System**: Law enforcement mechanics and wanted system
 - **Custom Events**: Server-wide events and community activities
@@ -58,6 +59,32 @@ The framework is developed in Lua following FiveM scripting conventions. Contrib
 ## License
 
 This framework is released under the MIT License. See LICENSE file for details.
+
+## Roadmap
+
+The development roadmap outlines the high-level plan for implementing the framework's features. Key phases include:
+
+- Completing inventory and economy systems with advanced features
+- Implementing housing system including buyable mansions
+- Adding business system for drug dealing and illegal operations
+- Developing comprehensive UI components
+- Testing, optimization, and deployment
+
+For detailed roadmap with checkboxes, see [plans/roadmap.md](plans/roadmap.md).
+
+## TODO List
+
+Current development tasks are tracked in the TODO list. Major areas include:
+
+1. **Phase 1**: Core Infrastructure - Establish the foundational structure and database setup
+2. **Phase 2**: Essential Systems - Implement core player and economic mechanics
+3. **Phase 3**: Advanced Features - Add complex systems like vehicles, housing, business, and factions
+4. **Phase 4**: Specialized Systems - Integrate police and event management
+5. **Phase 5**: UI Development - Create comprehensive user interfaces
+6. **Phase 6**: Advanced Systems - Implement additional features like crafting and skills
+7. **Phase 7**: Testing and Polish - Finalize with testing, optimization, and deployment
+
+For full TODO list, see [plans/todo.md](plans/todo.md).
 
 ## Support
 

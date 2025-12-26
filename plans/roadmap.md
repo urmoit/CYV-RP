@@ -11,58 +11,67 @@ This document outlines the high-level roadmap for developing the custom FiveM se
 
 ## Core Components
 1. **Player Management**
-   - Character creation and customization
-   - Login/registration system
-   - Player data persistence
+    - [ ] Character creation and customization
+    - [ ] Login/registration system
+    - [ ] Player data persistence
 
 2. **Inventory System**
-   - Item management with metadata
-   - Weight and capacity limits
-   - Item usage and interactions
+    - [ ] Item management with metadata
+    - [ ] Weight and capacity limits
+    - [ ] Item usage and interactions
 
 3. **Economy System**
-   - Job system with salaries
-   - Money transactions
-   - Banking system
+    - [ ] Job system with salaries
+    - [ ] Money transactions
+    - [ ] Banking system
 
 4. **Vehicle Management**
-   - Vehicle ownership and spawning
-   - Garage system
-   - Vehicle customization
+    - [ ] Vehicle ownership and spawning
+    - [ ] Garage system
+    - [ ] Vehicle customization
 
 5. **Housing System**
-   - Property ownership
-   - Furniture and customization
-   - Rental system
+     - [ ] Property ownership
+     - [ ] Furniture and customization
+     - [ ] Rental system
+     - [ ] Buyable mansions with premium features
 
-6. **Factions/Gangs**
-   - Group management
-   - Territory control
-   - Member roles and permissions
+6. **Business System**
+     - [ ] Drug dealing operations
+     - [ ] Business ownership and management
+     - [ ] Profit sharing and expansion
+     - [ ] Illegal activities integration
 
-7. **Police System**
-   - Law enforcement mechanics
-   - Wanted system
-   - Jail and fines
+7. **Factions/Gangs**
+    - [ ] Group management
+    - [ ] Territory control
+    - [ ] Member roles and permissions
 
-8. **Custom Events**
-   - Server-wide events
-   - Seasonal activities
-   - Community challenges
+8. **Police System**
+    - [ ] Law enforcement mechanics
+    - [ ] Wanted system
+    - [ ] Jail and fines
+
+9. **Custom Events**
+    - [ ] Server-wide events
+    - [ ] Seasonal activities
+    - [ ] Community challenges
 
 ## Additional Features
-- Shops and marketplaces
-- Crafting system
-- Skills and leveling
-- Admin/moderation tools
-- Logging and analytics
+- [ ] Shops and marketplaces
+- [ ] Crafting system
+- [ ] Skills and leveling
+- [ ] Admin/moderation tools
+- [ ] Logging and analytics
 
 ## Development Phases
-1. **Phase 1**: Core infrastructure (directory structure, manifest, config)
-2. **Phase 2**: Essential systems (player, inventory, economy)
-3. **Phase 3**: Advanced features (vehicles, housing, factions)
-4. **Phase 4**: Specialized systems (police, events)
-5. **Phase 5**: Additional features and testing
+1. **Phase 1**: Core Infrastructure - Establish the foundational structure and database setup
+2. **Phase 2**: Essential Systems - Implement core player and economic mechanics
+3. **Phase 3**: Advanced Features - Add complex systems like vehicles, housing, and businesses
+4. **Phase 4**: Specialized Systems - Integrate police and event management
+5. **Phase 5**: UI Development - Create comprehensive user interfaces
+6. **Phase 6**: Advanced Systems - Implement additional features like crafting and skills
+7. **Phase 7**: Testing and Polish - Finalize with testing, optimization, and deployment
 
 ## System Architecture Diagram
 
@@ -73,6 +82,7 @@ graph TD
     D[Economy System] --> B
     E[Vehicle Management] --> B
     F[Housing System] --> B
+    F2[Business System] --> B
     G[Factions/Gangs] --> B
     H[Police System] --> B
     I[Custom Events] --> B
@@ -85,6 +95,7 @@ graph TD
     D --> M
     E --> M
     F --> M
+    F2 --> M
     G --> M
     H --> M
     I --> M
@@ -97,6 +108,7 @@ graph TD
     N --> D
     N --> E
     N --> F
+    N --> F2
     N --> G
     N --> H
     N --> I
